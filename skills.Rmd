@@ -1,0 +1,85 @@
+---
+title: "Skills and Experience"
+output: 
+  html_document:
+    toc: true 
+    toc_float: true
+    theme: journal
+---
+
+
+
+## Work Experience
+
+------------------------------------------------------
+
+### Qingdao Center for Disease Control and Prevention  
+
+Staff Member 
+
+-	Managed health records of the citizens in Tsingdao and assisted in occupational disease assessment meetings
+
+-	Conducted multivariate logistic regression to analyze the relationship between occupational factors and women depression and to analyze the relationship between tobacco use and occupational diseases
+
+
+### Shandong Qianfoshan Hospital 
+
+Intern Physician
+
+-	Monitored nutritional and health status of patients and collaborated with surgeons in surgeries in obstetrics and urology
+
+- Input and standardized data on infants’ health status and children’s bone density using EpiData
+
+
+## Activities and leadership experience
+
+------------------------------------------------------
+
+- China Anti-Cancer Association Youth Council, Member                            2018
+- Home Education Technology Co., Limited, Teaching Assistant                       2018
+- Department of Public Relations, Leader                                    2015-2016
+- The Georgetown Initiative for U.S.-China Dialogue on Global Issues, Participant        2016
+- The 7th National Conference on Acute and Critical Poisoning Diseases, Volunteer        2016
+- Beijing Society of Biochemistry and Molecular Biology, Annual Conference Participant  2016
+- Jinan Center Hospital, Volunteer                                               2016
+- Wildfire Prevention Program, Volunteer                                         2016
+
+## Skills
+
+------------------------------------------------------
+
+Technical: SAS, R, SPSS, Neo4j, Octave, EpiData, Python, MATLAB
+
+## Language
+
+------------------------------------------------------
+
+Language: Mandarin and Cantonese Chinese (native), English (fluent) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------
+<style>
+  img {width:70px; float:left; border:0px; margin:0px 0px; padding:0px 0px;}
+</style>
+
+<img src = "https://cran.r-project.org/Rlogo.svg"> 
+<img src = "https://www.usuaebusiness.org/wp-content/uploads/2019/03/saslogo280x80-580x358.jpg"> 
+<img src = "https://i.ytimg.com/vi/1kyPUqU-MkE/maxresdefault.jpg"> 
+<img src = "https://python.rs/pylogo.png">
+<img src = "https://miro.medium.com/max/390/1*wxtUxzIjfqGW2GDUSYbSMw.png">
+<img src = "https://s3.amazonaws.com/libapps/accounts/6589/images/62cdaecd76b867eee1534ded199822e3.jpg">
+<img src = "https://upload.wikimedia.org/wikipedia/commons/8/81/LOGO_EPIDATA-03.jpg">
+<img src = "https://www.egi.eu/wp-content/uploads/2017/03/gnu-octave-logo-lnx-300x171.png">
+

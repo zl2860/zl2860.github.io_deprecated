@@ -1,0 +1,107 @@
+---
+title: "Research"
+output: 
+  html_document:
+    toc: true 
+    toc_float: true
+    theme: journal
+---
+
+------------------------------------------------------
+
+# Identification of a Radiomic Signature for Improving Individualized Medicine in Colorectal Carcinoma 
+
+------------------------------------------------------
+
+Sixth Affiliated Hospital of SYSU                                               
+
+- Used Python libraries to apply a Laplacian of Gaussian filter in CT images and extracted nearly 1280 first order statistics, texture and shape features from the transformed and original images
+
+- Selected the robust features that can be used for cancer prediction via LASSO regression and finally identified nearly 30 robust features by using R packages
+
+- Calculated the rad-score for each patient based on the selected features and conducted a survival analysis among patients with high, medium and low levels of rad-scores, verifying the predictive value of the selected features
+
+------------------------------------------------------
+
+# Prediction for Incidence Rates of Cervical Cancer and Endometrial Carcinoma in Shandong, China Based on Gray Model (1, 1)
+
+------------------------------------------------------
+
+Department of Biostatistics, Shandong University                                 
+
+- Calculated the crude, age-standardized and urban(rural) incidence rates of cervical cancer and endometrial carcinoma in Shandong Province, 2013~2017
+
+- Built an improved gray model(1,1) with high accuracy by Python to predict the incidence rates of cervical cancer and endometrial carcinoma from 2018 to 2020 in Shandong, verifying other previous prediction of the incidence rates
+
+------------------------------------------------------
+
+# Research on Covariates Adjustment and Single Nucleotide Polymorphisms (SNPs) Identification in Genome-wide Association Study (GWAS）
+
+------------------------------------------------------
+
+Department of Biostatistics, Shandong University 
+
+- Collected more than 9,900 published articles about GWAS of cancer and cardiovascular diseases and categorized them based on studied traits 
+
+- Designed and constructed a dataset for all the articles, documenting specific SNPs, statistical methods, adjusted covariates, interval validation results and other parameters of each study
+
+- Apply self-established statistical methods to determine the rationality and effectiveness of the adjustment of certain factors other than SNPs in current studies
+
+------------------------------------------------------
+
+# Mapping Health: Big Data for Tracking Population Health in Shandong Province, China
+
+------------------------------------------------------
+
+Department of Biostatistics, Shandong University 
+
+-	Collected data using a multistage sampling method and standardized the dataset on healthcare services and drug usage in Weihai from the 1980s, improving the validity of 136 datasets with more than 10,000 variables of approximately 5,000,000 people in Shandong Province
+
+-	Designed and constructed Diabetes Knowledge Graph using Cypher Language in Neo4j, including the complete process for screening, diagnosis, treatment, and education
+
+-	Refined the "predictive-diagnostic-therapeutic" pathways from 61 official diabetes handbooks and coded them into the graph database as specific nodes and relationships, constructing the basis for the application of deep learning algorithms
+
+------------------------------------------------------
+
+# Assessment of Trans Fatty Acids (TFAs) content in Milk Teas Sold in Jinan
+
+------------------------------------------------------
+
+Center for Hygienic Analysis and Detection, Shandong University
+
+-	Measured the TFA content in 69 types of semi-solid lipid and liquid milk teas via gas chromatography, following the national standard (GB5009.257-2016)
+
+-	Conducted quantitative and qualitative research on GC-2010 Gas Chromatography to validate the nutrient contents of samples 
+
+-	Analyzed the collected data and drafted a research report for customers, presenting the risk index on TFA intake and improving the accuracy of nutrition labels
+
+------------------------------------------------------
+
+# Research on Nanoparticles Targeting Osteoblasts Carrying miRNA-21
+
+------------------------------------------------------
+
+School of Dentistry, Shandong University 
+
+-	Investigated the role of Periostin (OSF-2) in bone tissue regeneration and discussed potential strategies for nano-based drug delivery, such as nephroblastoma overexpressed (CCN3/NOV) and human lamininγ2 chain, in a mini-review
+
+-	Compared the feasibility and delivery efficiency of different types of nanoparticles carrying miRNA-21 to promote bone tissue regeneration
+
+-	Proposed the significance of phage display methodology in seeking peptide motifs of translocating nanoparticles 
+
+------------------------------------------------------
+
+# Risk Assessment of Excessive Alcohol Consumption
+
+------------------------------------------------------
+
+Center for Hygienic Analysis and Detection, Shandong University
+
+-	Conducted surveys on 502 college students and collected their oral mucosal epithelial cells for ALDH analysis by Polymerase Chain Reaction (PCR)
+
+-	Processed the data and analyzed the relationship between excessive alcohol consumption and behavioral factors using SPSS and EpiData
+
+-	Gave a poster presentation assessing the risk index of excessive alcohol consumption based on the comparison of students’ drinking behaviors and genotypes
+
+
+
