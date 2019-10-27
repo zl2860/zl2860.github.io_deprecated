@@ -11,7 +11,20 @@ output:
 
 <img src = "https://upload.wikimedia.org/wikipedia/zh/9/94/Shandong_University.jpg"> <img src = "https://i.pinimg.com/originals/cd/e5/0b/cde50b7a61774fa1562745665000a529.png"> 
 
+# Education - graduate
+
+- Master of Science in Biostatistics (theory and methods)
+
+- Sept. 2019 ~ May. 2021 (expected)
+
+- [Department of Biostatistics](https://www.mailman.columbia.edu/become-student/departments/biostatistics)
+
+- [Mailman School of Public Health](https://www.mailman.columbia.edu/)
+
+- [Columbia University](https://www.columbia.edu/), USA
+
 # Education - undergraduate
+
 - Bachelor of Medical Science
   - Rank: 5%
   - Grade Point Average: 3.98/4.00 
@@ -27,19 +40,9 @@ output:
 ## Exchange
 - Jun. 2016 ~ Oct. 2016 
 
-- School of Population and Public Health
+- [School of Population and Public Health](https://www.spph.ubc.ca/)
 
-- University of British Columbia, Canada
-
-# Education - graduate
-
-- Sept. 2019 ~ 2021. May (expected)
-
-- Department of Biostatistics
-
-- Mailman School of Public Health
-
-- Columbia University
+- [University of British Columbia](https://www.ubc.ca/), Canada
 
 ------------------------------------------------------
 # Courses
@@ -53,6 +56,7 @@ output:
 - Biostatistics
 
 ## Basic & Clinical Medicine:
+
 - Histoembryology
 - Cell biology
 - Biochemistry
@@ -62,11 +66,14 @@ output:
 - Internal Medicine
 
 ## Public Health:
+
 - Epidemiology
+- Toxicology
 - Social Medicine
 - Occupational Health
 - Maternal Health
 - Environmental Health
+- Nutrition and Food Science
 
 ## Technical:
 - Statistics with R
