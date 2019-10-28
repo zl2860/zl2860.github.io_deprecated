@@ -3,6 +3,8 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
+    - text: Dashboard
+      href: dashboard.html
     - text: Education
       href: education.html
     - text: "Research"
@@ -13,7 +15,6 @@ navbar:
       href: mailto:<zl2860@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: https://github.com/zl2860
-
       
 output:
   html_document:

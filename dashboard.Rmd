@@ -1,0 +1,78 @@
+---
+title: "Dashboard"
+author: "Zongchao Liu"
+date: "10/27/2019"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+```
+
+
+```{r}
+data("ny_noaa")
+
+processed_data <-
+  ny_noaa %>%
+  mutate(date_preserved = date) %>%
+  separate(date, into = c("year", "month", "day")) %>%
+  mutate( year = as.numeric(year))
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Trend for the Temperature in USW00094790 in 2000
+
+```{r}
+processed_data %>%
+  drop_na(snwd) %>%
+  mutate(tmin = as.numeric(tmin),
+         tmax = as.numeric(tmax)) %>%
+  filter(id == "USW00094790",
+         year == 2000) %>%
+  plot_ly(y = ~ date_preserved, x = ~ tmin, z = ~ tmax) %>%
+  add_trace(opacity = 0.3)
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Monthly changes of average max-temperature in USW00094790, 1985 ~ 2005
+
+```{r}
+# monthly average max-temperature
+processed_data %>%
+  mutate(tmax = as.numeric(tmax),
+         tmax_c = tmax/10) %>%
+  filter(id == "USW00094790") %>%
+  filter(year >= 1984 & year <= 2007) %>%
+  group_by(year,month) %>%
+  summarise(tmax_month_year = mean(tmax)/10) %>%
+  plot_ly( x = ~ month, y = ~ year, z = ~ tmax_month_year , type = "heatmapgl",
+           colors = colorRamp(c("white", "orange","red")))
+
+```
+
+
+### Monthly Changes of Precipitation in USW00094790, 1985 ~ 2010
+
+```{r}
+ny_noaa %>%
+  mutate(date_preserved = date) %>%
+  separate(date, into = c("year", "month", "day")) %>%
+  mutate( year = as.numeric(year)) %>%
+  filter(id == "USW00094790" & year >= 1984 ) %>%
+  mutate(year = as.character(year)) %>%
+  plot_ly( x = ~ date_preserved, y = ~ prcp,  type = "bar", color = ~year)
+  
+```
