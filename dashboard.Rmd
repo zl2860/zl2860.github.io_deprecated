@@ -30,7 +30,7 @@ processed_data <-
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Trend for the Temperature in USW00094790 in 2000
+### The Trend of the Temperature in WATERTOWN AIRPORT, 2000
 
 ```{r}
 processed_data %>%
@@ -39,15 +39,19 @@ processed_data %>%
          tmax = as.numeric(tmax)) %>%
   filter(id == "USW00094790",
          year == 2000) %>%
-  plot_ly(y = ~ date_preserved, x = ~ tmin, z = ~ tmax) %>%
-  add_trace(opacity = 0.3)
+  plot_ly(y = ~ date_preserved, x = ~ (tmin/10), z = ~ (tmax/10)) %>%
+  add_trace(opacity = 0.3) %>% 
+  layout(title = "The Trend of the Temperature in WATERTOWN AIRPORT, 2000",
+         xaxis = list(title = "Tmin"),
+         yaxis = list(title = "Tmax"),
+         zaxis = list(title = "Date"))
 ```
 
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Monthly changes of average max-temperature in USW00094790, 1985 ~ 2005
+### Monthly Changes of Average Max-temperature in Watertown Airport, 1985 ~ 2005
 
 ```{r}
 # monthly average max-temperature
@@ -59,12 +63,15 @@ processed_data %>%
   group_by(year,month) %>%
   summarise(tmax_month_year = mean(tmax)/10) %>%
   plot_ly( x = ~ month, y = ~ year, z = ~ tmax_month_year , type = "heatmapgl",
-           colors = colorRamp(c("white", "orange","red")))
+           colors = colorRamp(c("white", "orange","red"))) %>%
+  layout(title = "Monthly Changes of Average Max-temperature in Watertown Airport, 1985 ~ 2005", font = list(size = 8)) %>% 
+  layout(xaxis = list(title = "Month"),
+         yaxis = list(title = "Year"))
 
 ```
 
 
-### Monthly Changes of Precipitation in USW00094790, 1985 ~ 2010
+### Monthly Changes of Precipitation in Watertown Airport, 1985 ~ 2010
 
 ```{r}
 ny_noaa %>%
@@ -73,6 +80,9 @@ ny_noaa %>%
   mutate( year = as.numeric(year)) %>%
   filter(id == "USW00094790" & year >= 1984 ) %>%
   mutate(year = as.character(year)) %>%
-  plot_ly( x = ~ date_preserved, y = ~ prcp,  type = "bar", color = ~year)
+  plot_ly( x = ~ date_preserved, y = ~ prcp,  type = "bar", color = ~year) %>%
+  layout( title = "Monthly Changes of Precipitation in Watertown Airport, 1985 ~ 2010", font = list(size =8)) %>%
+  layout(xaxis = list(title = "Date"),
+         yaxis = list(title = "Precipitation"))
   
 ```
