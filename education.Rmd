@@ -54,6 +54,11 @@ output:
 - Physics 
 - Linear Algebra
 - Biostatistics
+- Biostatistical Method I & II
+- Statistical Inference
+- Survival Analysis
+- Real Analysis
+- ...
 
 ## Basic & Clinical Medicine:
 
@@ -64,6 +69,7 @@ output:
 - Immunology
 - Surgery
 - Internal Medicine
+- ...
 
 ## Public Health:
 
@@ -74,12 +80,14 @@ output:
 - Maternal Health
 - Environmental Health
 - Nutrition and Food Science
+- ...
 
 ## Technical:
 - Statistics with R
 - SAS Programming
 - Machine Learning
 - Data Science
+- ...
 
 
 
