@@ -14,7 +14,7 @@ output:
 
 # About
 
-I received a BS in Medical Science from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering and health data science. I am also interested in applications of the wearable sensors in healthcare and computational epidemiology. You may learn more about me from [`here`](./CV-ver. 2019.pdf).
+I received a BS in Medical Science from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering and health data science. I am also interested in applications of the wearable sensors in healthcare and computational epidemiology/biology. You may learn more about me from [`here`](./CV-ver. 2019.pdf).
 
 
 <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7rnS_5mk42R2vOg0QX2BtaW8cyzqcb2UoMtcT4PGQSfHf-RT&s">

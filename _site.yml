@@ -3,14 +3,21 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
+    - text: Project
+      href: https://yy3019.github.io/P8105_final_project.github.io/index.html
+      icon: fas fa-database
     - text: Dashboard
       href: dashboard.html
+      icon: fas fa-chart-line
     - text: Education
       href: education.html
+      icon: fas fa-university
     - text: "Research"
       href: research.html
+      icon: fas fa-search
     - text: "Skills & Activities"
       href: skills.html
+      icon: fas fa-toolbox
     - icon: fa-envelope fa-lg
       href: mailto:<zl2860@cumc.columbia.edu>
     - icon: fa-github fa-lg
