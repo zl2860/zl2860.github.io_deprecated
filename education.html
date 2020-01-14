@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -237,6 +236,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,6 +265,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -411,7 +417,10 @@ div.tocify {
 <div id="education---graduate" class="section level1">
 <h1>Education - graduate</h1>
 <ul>
-<li><p>Master of Science in Biostatistics (theory and methods)</p></li>
+<li>Master of Science in Biostatistics (theory and methods)
+<ul>
+<li>Grade Point Average (cumulative): 4.00</li>
+</ul></li>
 <li><p>Sept. 2019 ~ May. 2021 (expected)</p></li>
 <li><p><a href="https://www.mailman.columbia.edu/become-student/departments/biostatistics">Department of Biostatistics</a></p></li>
 <li><p><a href="https://www.mailman.columbia.edu/">Mailman School of Public Health</a></p></li>
@@ -423,8 +432,7 @@ div.tocify {
 <ul>
 <li>Bachelor of Medical Science
 <ul>
-<li>Rank: 5%</li>
-<li>Grade Point Average: 3.98/4.00</li>
+<li>Grade Point Average: 3.98</li>
 </ul></li>
 <li><p>Sept. 2014 ~ Jul. 2019</p></li>
 <li><p><a href="http://biostat.sdu.edu.cn/">Department of Biostatistics</a></p></li>
@@ -452,9 +460,9 @@ div.tocify {
 <li>Linear Algebra</li>
 <li>Biostatistics</li>
 <li>Biostatistical Method I &amp; II</li>
-<li>Statistical Inference</li>
-<li>Survival Analysis</li>
-<li>Real Analysis</li>
+<li>Statistical Inference (2020 spring)</li>
+<li>Survival Analysis (2020 fall)</li>
+<li>Real Analysis (2020 summer)</li>
 <li>…</li>
 </ul>
 </div>

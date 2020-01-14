@@ -14,6 +14,7 @@ output:
 # Education - graduate
 
 - Master of Science in Biostatistics (theory and methods)
+  - Grade Point Average (cumulative): 4.00
 
 - Sept. 2019 ~ May. 2021 (expected)
 
@@ -26,8 +27,7 @@ output:
 # Education - undergraduate
 
 - Bachelor of Medical Science
-  - Rank: 5%
-  - Grade Point Average: 3.98/4.00 
+  - Grade Point Average: 3.98
 
 - Sept. 2014 ~ Jul. 2019
 
@@ -55,9 +55,9 @@ output:
 - Linear Algebra
 - Biostatistics
 - Biostatistical Method I & II
-- Statistical Inference
-- Survival Analysis
-- Real Analysis
+- Statistical Inference (2020 spring)
+- Survival Analysis (2020 fall)
+- Real Analysis (2020 summer)
 - ...
 
 ## Basic & Clinical Medicine:
