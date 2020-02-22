@@ -1,0 +1,74 @@
+---
+title: "Project"
+output: 
+  html_document:
+    toc: true 
+    toc_float: true
+    theme: journal
+---
+
+------------------------------------------------------
+
+# A Simulation Study to Compare Two Bootstrapping Methods for propensity-score matching
+
+
+------------------------------------------------------
+
+github repo: https://github.com/jaredgarfinkel/P8160_project1_group1.git
+
+[[report]](./proj_1_group_1-1.pdf)
+
+- Generated 15 scenarios of epidemiological confounding data with weak, meidum and strong confounding relationship between covariates and continuous & binary outcomes
+
+- Randomly Generated 1000 datasets for each scenarios for calculating the true effect and variance
+
+- Comducted the propensity score matching method via both complex and simple bootstrap to calculate and compare the varibility of the average treatment effects with true variance
+
+
+
+------------------------------------------------------
+
+#  The fragility index in clinical trials
+
+------------------------------------------------------
+
+website: https://yy3019.github.io/P8105_final_project.github.io/index.html
+
+- Built a dataset containing general information of more than 320000 clinical trials based on
+the sources from clinicaltrials.gov
+
+- Built a shiny-app visualizing the spatial distribution of the clinical trials in the United States
+
+- Assisted in building a fragility index calculator for meta analyses with different methods,
+measures and random effects
+
+
+
+------------------------------------------------------
+
+# Identification of a Radiomic Signature for Improving Individualized Medicine in Colorectal Carcinoma 
+
+------------------------------------------------------
+
+Sun-Yat Sen University
+
+github repo: https://github.com/zl2860/radiomics-R.git                          
+
+- Used Python libraries to apply a Laplacian of Gaussian filter in CT images and extracted nearly 1280 first order statistics, texture and shape features from the transformed and original images
+
+- Selected the robust features that can be used for cancer prediction via LASSO regression and finally identified nearly 30 robust features by using R packages
+
+- Calculated the rad-score for each patient based on the selected features and conducted a survival analysis among patients with high, medium and low levels of rad-scores, verifying the predictive value of the selected features
+
+------------------------------------------------------
+
+# Prediction for Incidence Rates of Cervical Cancer and Endometrial Carcinoma in Shandong, China Based on Gray Model (1, 1)
+
+------------------------------------------------------
+
+Department of Biostatistics, Shandong University                                 
+
+- Calculated the crude, age-standardized and urban(rural) incidence rates of cervical cancer and endometrial carcinoma in Shandong Province, 2013~2017
+
+- Built an improved gray model(1,1) with high accuracy by Python to predict the incidence rates of cervical cancer and endometrial carcinoma from 2018 to 2020 in Shandong, verifying other previous prediction of the incidence rates
+

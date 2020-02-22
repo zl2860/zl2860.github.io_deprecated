@@ -4,7 +4,7 @@ navbar:
   title: "Home"
   right:
     - text: Project
-      href: https://yy3019.github.io/P8105_final_project.github.io/index.html
+      href: project.html
       icon: fas fa-database
     - text: Dashboard
       href: dashboard.html
