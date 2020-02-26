@@ -13,7 +13,7 @@ output:
 
 ------------------------------------------------------
 
-By far, our team have contributed to building a dataset containing basic information of over 32,0000 clinical trials over the world. A dataset that only contains trials in the U.S. is also availbale. The U.S. version data has been used to build an online [`shinyapp`](https://zongchaoliu.shinyapps.io/clinicaltrials_map/) to be visualized. Please contact us if you are interested in the dataset.
+By far, our team have contributed to constructing a dataset containing basic information of over 32,0000 clinical trials over the world. The source of the data is `Clinicaltrials.gov`. A dataset that only contains trials in the U.S. is also availbale. The U.S. version data has been used to build an online [`shinyapp`](https://zongchaoliu.shinyapps.io/clinicaltrials_map/) to be visualized. Please contact us if you are interested in the dataset.
 
 Our team also contributed to building an online tool for calculating fragelity index of clinical trials for meta-analysis studies. Click [`here`](https://yy3019.shinyapps.io/FI_calculator/) to learn more about the tool.
 
