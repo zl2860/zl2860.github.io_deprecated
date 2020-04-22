@@ -14,10 +14,7 @@ output:
 
 # About 
 
-I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering and health data science. I am also preparing for applying to doctoral programs in computational/quantitative biology or biostats. Currently I am learning tensorflow and hope it would help in my future research. You may learn more about me from [`here`](./LIU, ZONGCHAO_26:20:2020.pdf).
-
-
-<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7rnS_5mk42R2vOg0QX2BtaW8cyzqcb2UoMtcT4PGQSfHf-RT&s">
+I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and biostats. Currently I am using R and Python for my future research. You may learn more about me from [`here`](./LIU, ZONGCHAO_26:20:2020.pdf).
 
 # Contact
 

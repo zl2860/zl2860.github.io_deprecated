@@ -13,6 +13,10 @@ output:
 
 ------------------------------------------------------
 
+Columbia University irving Medical Center
+
+- Constructed a Variational AutoEncoder for generating a Model-X knockoff, which is a novel way to conduct variable selection while controlling False Discovery Rate(FDR)
+
 Sixth Affiliated Hospital of SYSU                                               
 
 - Used Python libraries to apply a Laplacian of Gaussian filter in CT images and extracted nearly 1280 first order statistics, texture and shape features from the transformed and original images
@@ -20,6 +24,8 @@ Sixth Affiliated Hospital of SYSU
 - Selected the robust features that can be used for cancer prediction via LASSO regression and finally identified nearly 30 robust features by using R packages
 
 - Calculated the rad-score for each patient based on the selected features and conducted a survival analysis among patients with high, medium and low levels of rad-scores, verifying the predictive value of the selected features
+
+- Contructed predictive model including random forest, boosting, logistic regression to predict the chances of being diseased based on the charateristics of patients, yielding a high value in overall accuracy.
 
 ------------------------------------------------------
 

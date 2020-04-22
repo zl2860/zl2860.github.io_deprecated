@@ -6,6 +6,36 @@ output:
     toc_float: true
     theme: journal
 ---
+------------------------------------------------------
+
+# Analyses of daily COVID-19 cases across nations
+
+
+------------------------------------------------------
+
+ongoing project
+
+- Develop the Newton-Raphson algorithm to fit a logisitc curve to each region
+
+- Apply K-mean and Guassian mixture model with EM algorithm to cluster the fitted parameters
+
+------------------------------------------------------
+
+# Implementation and optimization of algorithms on cancer diagnosis dataset
+
+
+------------------------------------------------------
+
+github repo: https://github.com/ys3298/computing_proj2.git 
+
+[[report]](./cancer.pdf)
+
+-	Built a predictive model based on Logistic Regression to facilitate cancer diagnosis
+
+-	Trained Logistic Regression models with Newton Raphson, Gradient Decent algorithms from scratch in R (No package used)
+
+-	Decreased the misclassification rate by 4%, via implementing a Logistic-LASSO Regression model with Path-wise Coordinate Descent
+
 
 ------------------------------------------------------
 
