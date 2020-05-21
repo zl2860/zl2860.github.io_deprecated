@@ -14,7 +14,7 @@ output:
 
 # About 
 
-I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and biostats. Currently I am using R and Python for my future research. You may learn more about me from [`here`](./CV_04:22:2020.pdf).
+I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and biostats. Currently I am using R and Python for my future research. You may learn more about me on this page.
 
 
 # Contact
