@@ -6,6 +6,27 @@ output:
     toc_float: true
     theme: journal
 ---
+
+------------------------------------------------------
+
+# A Bayesian model of hurrican trajectories
+
+
+------------------------------------------------------
+
+[[report]](./Project4.pdf)
+
+- Implemented regular Metropolis–Hastings algorithm to achieve stationary distribution in Markov Chain.
+
+- Estimated parameters and the numerical standard error and constructed the 95% CI from the results.
+
+- Predicted the spatial moving trends and wind speed of the hurricanes.
+
+------------------------------------------------------
+
+
+
+
 ------------------------------------------------------
 
 # Analyses of daily COVID-19 cases across nations
@@ -13,11 +34,17 @@ output:
 
 ------------------------------------------------------
 
-ongoing project
+github repo: https://github.com/zl2860/COVID-19
 
-- Develop the Newton-Raphson algorithm to fit a logisitc curve to each region
+[[report]](./project3.pdf)
 
-- Apply K-mean and Guassian mixture model with EM algorithm to cluster the fitted parameters
+- fitted a logistic growth curve to model the COVID-19 cases data.
+
+- Estimated parameters by gradient descent. The growth curve formula were transformed firstly in order to obatin the intial parameters for optimization.
+
+- Implemented both Gaussian Mixture Model with EM algorithm and Kmeans algorithm to cluster the estimated parameters for each countries.
+
+- Investigated the association between growth modes and countries by comparing and analyzing the resulted clusters
 
 ------------------------------------------------------
 
