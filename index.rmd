@@ -10,7 +10,7 @@ output:
 
 <img src = './photo_4.jpeg' height = "10%" width = "10%" />
 
-[[CV]](./CV_05:21:2020.pdf)
+[[CV]](./CV_07:20:2020.pdf)
 
 # About 
 
