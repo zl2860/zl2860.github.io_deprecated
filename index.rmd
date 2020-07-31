@@ -16,12 +16,16 @@ output:
 
 I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and biostats. The following are some of the research projects I am currently working on:
 
-1. Controlling FDR: A 3D-based interpretable deep learning model for diffusion tensor brain imaging data
+**Controlling FDR: A 3D-based interpretable deep learning model for diffusion tensor brain imaging data**
+
 https://github.com/zl2860/3d-CNN-DTI
+
 ![](./dl_dashoboard.png)
 
-2. Radiomics analysis of computed tomography for predicting pathological response to neoadjuvant treatment in rectal cancer: Post-hoc Analysis of a Randomized Controlled Trial
+**Radiomics analysis of computed tomography for predicting pathological response to neoadjuvant treatment in rectal cancer: Post-hoc Analysis of a Randomized Controlled Trial**
+
 https://github.com/zl2860/radiomics-R
+
 ![](./radiomics.png)
 ![](./radscore.png)
 
