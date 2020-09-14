@@ -10,17 +10,19 @@ output:
 
 <img src = './photo_4.jpeg' height = "10%" width = "10%" />
 
-[[CV]](./LIU, ZONGCHAO_07/20/2020.pdf)
+[[CV]](./LIU, ZONGCHAO_09/13/2020.pdf)
 
 # About 
 
-I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and biostats. The following are some of the research projects I am currently working on:
+I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and biostats. The following are some of the research projects that I have been working on:
 
 **Controlling FDR: A 3D-based interpretable deep learning framework for diffusion tensor brain imaging data**
 
 https://github.com/zl2860/3d-CNN-DTI
 
-![](./dl_dashoboard.png)
+![](./demo_1.png)
+
+![](./demo_2.jpg)
 
 **Radiomics analysis of computed tomography for predicting pathological response to neoadjuvant treatment in rectal cancer: Post-hoc Analysis of a Randomized Controlled Trial**
 
