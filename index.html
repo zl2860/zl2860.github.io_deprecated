@@ -13,20 +13,28 @@
 
 <title>Zongchao Liu</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -40,11 +48,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -57,32 +60,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -92,10 +71,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -112,40 +87,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 61px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -173,7 +124,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -185,7 +136,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -196,10 +147,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -211,7 +175,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -337,7 +300,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -351,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -365,35 +328,35 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="project.html">
-    <span class="fas fa fas fa-database"></span>
+    <span class="fas fa-database"></span>
      
     Project
   </a>
 </li>
 <li>
   <a href="Data---Tools.html">
-    <span class="fas fa fas fa-chart-line"></span>
+    <span class="fas fa-chart-line"></span>
      
     Data &amp; Tools
   </a>
 </li>
 <li>
   <a href="education.html">
-    <span class="fas fa fas fa-university"></span>
+    <span class="fas fa-university"></span>
      
     Education
   </a>
 </li>
 <li>
   <a href="research.html">
-    <span class="fas fa fas fa-search"></span>
+    <span class="fas fa-search"></span>
      
     Research
   </a>
 </li>
 <li>
   <a href="skills.html">
-    <span class="fas fa fas fa-toolbox"></span>
+    <span class="fas fa-toolbox"></span>
      
     Skills &amp; Activities
   </a>
@@ -421,7 +384,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -434,7 +397,7 @@ div.tocify {
 <p><a href="./LIU,%20ZONGCHAO_11:14:2020.pdf">[CV]</a></p>
 <div id="about" class="section level1">
 <h1>About</h1>
-<p>I received a BS in Preventive Medicine from Shandong University in 2019 and currently study biostatistics in Mailman School of Public Health, Columbia University. I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and biostats. The following are some of the research projects that I have been working on:</p>
+<p>I received a BS in Preventive Medicine from Shandong University in 2019 and an MS in Biostatistics in Mailman School of Public Health, Columbia University in 2021 (advised by <code>Dr. Ying Liu</code> and <code>Dr. Guohua Li</code>). I am passionate about the field of biomedical engineering, epidemiology and health data science. I am also preparing for applying to doctoral programs in epidemiology and health data science. The following are some of the research projects that I have been working on:</p>
 <p><strong>A Big Project for transformation between ICD-10-CM code and Clinical Classification Categories, Excessive Morbidity Assessment, as well as Cluster Analysis</strong></p>
 <p><a href="./Comorbidity.html">Click to see updated report</a></p>
 <p><strong>Controlling FDR: A 3D-based interpretable deep learning framework for diffusion tensor brain imaging data</strong></p>
@@ -445,13 +408,27 @@ div.tocify {
 <p><a href="https://github.com/zl2860/radiomics-R" class="uri">https://github.com/zl2860/radiomics-R</a></p>
 <p><img src="radiomics.png" /> <img src="radscore.png" /></p>
 </div>
+<div id="recent-selected-publications" class="section level1">
+<h1>Recent Selected Publications</h1>
+<ul>
+<li><strong>Liu ZC #</strong>, Wu WH #, Huang S, et al. Plasma lipids signify the progression of precancerous gastric lesions to gastric cancer: a prospective targeted lipidomics study. Theranostics 2022; 12(10):4671-4683.</li>
+<li><strong>Liu ZC #</strong>, Wu WH #, Li ZX, et al. Effect of Helicobacter pylori eradication on blood metabolite fingerprints and their interactions on the progression of gastric lesions: a prospective follow-up study. Cancer Biology &amp; Medicine. Accepted.</li>
+<li><strong>Liu, Z. #</strong>, Lin, Z. #, Cao, W., Li, R., Liu, L., Wu, H., &amp; Tang, K. (2021). Identify Key Determinants of Contraceptive Use for Sexually Active Young People: A Hybrid Ensemble of Machine Learning Methods. Children, 8(11), 968.</li>
+<li><strong>Liu ZC</strong>, Li ZX, Zhang Y, Zhou T, Zhang JY, You WC, Pan KF, Li WQ. Interpretation on the report of Global Cancer Statistics 2020. Journal of Multidisciplinary Cancer Management (Electronic Version), 7(2): 1-13.</li>
+<li>Zhuang, Z. #, <strong>Liu, Z. #</strong>, Li, J., Wang, X., Xie, P., Xiong, F., … &amp; Luo, Y. (2021). Radiomic signature of the FOWARC trial predicts pathological response to neoadjuvant treatment in rectal cancer. Journal of translational medicine, 19(1), 1-10.</li>
+<li>Li, X., Zheng, N. R., Wang, L. H., Li, Z. W., <strong>Liu, Z. C.</strong>, Fan, H., … &amp; Qin, J. (2021). Proteomic profiling identifies signatures associated with progression of precancerous gastric lesions and risk of early gastric cancer. EBioMedicine, 74, 103714.</li>
+<li>Li, W. Q., Qin, X. X., Li, Z. X., Wang, L. H., <strong>Liu, Z. C.</strong>, Fan, X. H., … &amp; Pan, K. F. (2022). Beneficial effects of endoscopic screening on gastric cancer and optimal screening interval: a population-based study. Endoscopy.</li>
+<li>Li, R., Hu, B., <strong>Liu, Z.</strong>, Xu, S., Li, J., Ma, S., … &amp; Liu, J. (2021). Insight into the effect of hospital-based prehabilitation on postoperative outcomes in patients with total knee arthroplasty: A retrospective comparative study. Arthroplasty Today, 10, 93-98.</li>
+<li>Huo, S., Wang, K., <strong>Liu, Z.</strong>, Yang, Y., Hee, J. Y., He, Q., … &amp; Tang, K. (2022). Influence of Maternal Exposure to Mass Media on Growth Stunting Among Children Under Five: Mediation Analysis Through the Water, Sanitation, and Hygiene Program. JMIR Public Health and Surveillance, 8(4), e33394.</li>
+<li><strong>Liu Z.</strong>, Li G., Excess comorbidities associated with autistic spectrum disorder diagnosis in pediatric hospital discharge records. 2021 APHA Annual Conference.</li>
+<li><strong>Liu ZC</strong>, Huang S, You WC, Pan KF, Li WQ. Plasma lipids associated with gastric lesion progression to gastric cancer: a prospective lipidomics study. World Cancer Conference 2022. Accepted</li>
+</ul>
+</div>
 <div id="contact" class="section level1">
 <h1>Contact</h1>
 <p>Zongchao Liu<br />
-100 Haven AVE APT TOWER 3<br />
-New York, New York 10032<br />
-E-mail: <a href="mailto:zl2860@cumc.columbia.edu" class="email">zl2860@cumc.columbia.edu</a><br />
-Phone: 1-646-249-6941</p>
+Fucheng Rd. 52, Haidian Dist., Department of Cancer Epidemiology, 100142, Beijing, China E-mail: <a href="mailto:zongchao.liu@outlook.com" class="email">zongchao.liu@outlook.com</a>; <a href="mailto:zl2860@cumc.columbia.edu" class="email">zl2860@cumc.columbia.edu</a><br />
+Phone: 1-646-249-6941; 86-133-3286-5842</p>
 </div>
 
 
@@ -483,7 +460,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -492,6 +469,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

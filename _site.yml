@@ -25,7 +25,6 @@ navbar:
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/zongchao-liu-b93168193/
       
-output:
-  html_document:
-    theme: journal
+output: 
+downcute_theme: "chaos"
   
